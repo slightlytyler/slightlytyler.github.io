@@ -1,109 +1,136 @@
-<!DOCTYPE html>
-<html lang="en" style="font-size:1.11vw;"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>slightlytyler UI Engineering &amp; Design</title><link rel="shortcut icon" href="/assets/favicon.png"/><link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css"/><style id="typography.js">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
-
-html {
-  box-sizing: border-box;
-  font-size: 200%;
-  line-height: 1.5em;
-  overflow-y: scroll;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  color: hsl(0,0%,20%);
-  font-family: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  word-wrap: break-word;
-}
-
-/* Make image responsive by default */
-img {
-  max-width: 100%;
-}
-
-h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dl,dd,p,figure,pre,table,fieldset,blockquote,form,noscript,iframe,img,hr {
-margin: 0;
-margin-bottom: 1.5rem;
-padding: 0;
-}
-
-blockquote {
-margin: 1.5rem 3.75rem;
-}
-
-b,strong {
-font-weight: 600
-}
-
-hr {
-background: hsl(0,0%,80%);
-border: none;
-height: 1px;
-margin-bottom: calc(1.5rem - 1px);
-}
-
-ol,ul {
-list-style-position: outside;
-margin-left: 1.5rem;
-}
-
-ul li,ol li {
-padding-left: 0;
-}
-
-code,kbd,pre,samp {
-font-size: 0.85rem;
-line-height: 1.5rem;
-}
-
-table {
-font-size: 1rem;
-line-height: 2.25rem;
-width: 100%;
-}
-
-thead {
-text-align: left;
-}
-
-h1,h2,h3,h4,h5,h6 {
-color: hsl(0,0%,20%);
-font-family: "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
-font-weight: 400;
-}
-
-h1 {
-font-size: 2.82843rem;
-line-height: 3rem;
-}
-
-h2 {
-font-size: 2rem;
-line-height: 2.25rem;
-}
-
-h3 {
-font-size: 1.41421rem;
-line-height: 2.25rem;
-}
-
-h4 {
-font-size: 1.25992rem;
-line-height: 1.5rem;
-}
-
-h5 {
-font-size: 1.12246rem;
-line-height: 1.5rem;
-}
-
-h6 {
-font-size: 1rem;
-line-height: 1.5rem;
-}
-
-
-</style></head><body><div id="react-mount"><div class="page" style="padding-top:4.5rem;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk" data-react-checksum="-59204753"><header class="site-header" style="position:fixed;z-index:1000;top:0px;left:0px;right:0px;display:flex;align-items:center;justify-content:space-between;height:4.5rem;padding:0 2em;background-image:linear-gradient(-180deg, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.40) 24%, rgba(227,227,229,0.40) 97%);box-shadow:0px 1px 0px 0px rgba(0,0,0,0.08);transition:background-color .5s, background-image .5s;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$=10"><a class=" active" href="/" data-reactid=".1dhi19q1urk.$=10.$/=10"><img src="/assets/logo.svg" style="display:block;width:8.75em;cursor:pointer;" data-reactid=".1dhi19q1urk.$=10.$/=10.0"/></a><a style="text-decoration:none;transition:opacity .1s;opacity:0;" class="" href="/hire-me/" data-reactid=".1dhi19q1urk.$=10.$/=11"><span style="padding:.6em 1.5em;border-width:calc(.0625em + 1px);border-style:solid;border-color:#19243e;border-radius:.25em;font-size:1em;font-weight:400;color:#19243e;cursor:pointer;transition:background-color .1s, color .1s;link:[object Object];" data-reactid=".1dhi19q1urk.$=10.$/=11.0">Hire Me</span></a></header><div data-reactid=".1dhi19q1urk.$/=11"><div style="height:calc(98vh - 4.5rem);@media (max-width: 1024px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10"><section class="hero" style="display:flex;align-items:center;justify-content:center;height:64%;text-align:center;@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (min-width: 501px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10"><div class="container" style="max-width:45em;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0"><div class="cta" style="margin-bottom:.25em;font-size:2.125em;font-weight:300;color:#19243e;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=10">Have a project? Let&#x27;s ship it together.</div><div class="description" style="font-family:GC, serif;font-size:1.4em;font-style:italic;font-weight:200;color:#6E768A;@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=11"><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=11.0">I’m a UI Engineer </span><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=11.$=11">&amp;</span><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=11.2"> Designer specializing in client side applications written in JavaScript.</span></div><div style="display:flex;justify-content:center;margin-top:3em;@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=12"><a style="text-decoration:none;" class="" href="/hire-me/" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=12.0"><section style="padding:1em 5em;border-width:calc(.0625em + 1px);border-style:solid;border-color:#6694FF;border-radius:.25em;font-size:1em;font-weight:400;color:#6694FF;cursor:pointer;transition:background-color .1s, color .1s;user-select:none;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$=10.0.$/=12.0.0">Hire Me</section></a></div></div></section><ul class="featured-projects" style="display:flex;flex-wrap:wrap;height:36%;list-style:none;margin:0;@media (max-width: 1024px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList"><li style="position:relative;width:25%;cursor:pointer;overflow:hidden;@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan"><div style="position:absolute;height:100%;background-color:#eeeff1;transition:background-color .3s;loaded:[object Object];border-style:solid;border-color:rgba(0,0,0,.15);border-left-width:0;border-right-width:1px;border-top-width:0;border-bottom-width:0;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];width:100%;left:0;top:0;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$=10"><img src="/assets/projects/bernies-tax-plan/project-image.jpg" style="display:block;opacity:0;transition:opacity .3s;loaded:[object Object];object-fit:cover;object-position:center;position:absolute;left:0;top:0;max-width:none;width:100%;height:100%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$=10.$/=10"/><div style="position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$=10.$=11"><span class="loader" style="width:30px;height:30px;border:4px solid rgba(255,255,255,0.6);display:inline-block;animation:Animation1 2s infinite ease;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$=10.$=11.0"><span class="loader-inner" style="vertical-align:top;display:inline-block;width:100%;background-color:rgba(255,255,255,0.6);animation:Animation2 2s infinite ease-in;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$=10.$=11.0.0"></span></span></div></div><a href="http://bernies-tax.dataviz.work/" target="_blank" style="display:flex;position:absolute;left:0;right:0;top:0;bottom:0;text-decoration:none;flex-direction:row;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$/=11"><div class="container" style="position:relative;display:flex;flex:1;margin-top:4.5em;opacity:0;transition:opacity 1s;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];show:[object Object];align-items:flex-start;justify-content:space-between;height:5em;margin-left:8%;margin-right:8%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$/=11.0"><img class="project-logo" src="/assets/projects/bernies-tax-plan/project-logo.svg" style="width:32%;margin-top:-1.8em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$/=11.0.$/=10"/><span class="link" style="font-weight:300;white-space:nowrap;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];arrow:[object Object];color:#017DDA;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$/=11.0.$/=11"><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$/=11.0.$/=11.$=10">Explore the Plan</span><span style="margin-left:.25em;font-size:200%;line-height:0;vertical-align:-.125em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02bernies-tax-plan.$/=11.0.$/=11.$/=11">›</span></span></div></a></li><li style="position:relative;width:25%;cursor:pointer;overflow:hidden;@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy"><div style="position:absolute;height:100%;background-color:#eeeff1;transition:background-color .3s;loaded:[object Object];border-style:solid;border-color:rgba(0,0,0,.15);border-left-width:0;border-right-width:1px;border-top-width:0;border-bottom-width:0;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];width:100%;left:0;top:0;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$=10"><img src="/assets/projects/mocksy/project-image.jpg" style="display:block;opacity:0;transition:opacity .3s;loaded:[object Object];object-fit:cover;object-position:center;position:absolute;left:0;top:0;max-width:none;width:100%;height:100%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$=10.$/=10"/><div style="position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$=10.$=11"><span class="loader" style="width:30px;height:30px;border:4px solid rgba(255,255,255,0.6);display:inline-block;animation:Animation1 2s infinite ease;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$=10.$=11.0"><span class="loader-inner" style="vertical-align:top;display:inline-block;width:100%;background-color:rgba(255,255,255,0.6);animation:Animation2 2s infinite ease-in;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$=10.$=11.0.0"></span></span></div></div><a href="https://slightlytyler.github.io/mocksy" target="_blank" style="display:flex;position:absolute;left:0;right:0;top:0;bottom:0;text-decoration:none;flex-direction:row;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$/=11"><div class="container" style="position:relative;display:flex;flex:1;margin-top:4.5em;opacity:0;transition:opacity 1s;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];show:[object Object];align-items:flex-start;justify-content:space-between;height:5em;margin-left:8%;margin-right:8%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$/=11.0"><img class="project-logo" src="/assets/projects/mocksy/project-logo.svg" style="width:32%;margin-top:-0.7em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$/=11.0.$/=10"/><span class="link" style="font-weight:300;white-space:nowrap;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];arrow:[object Object];color:white;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$/=11.0.$/=11"><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$/=11.0.$/=11.$=10">Download the App</span><span style="margin-left:.25em;font-size:200%;line-height:0;vertical-align:-.125em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02mocksy.$/=11.0.$/=11.$/=11">›</span></span></div></a></li><li style="position:relative;width:25%;cursor:pointer;overflow:hidden;@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo"><div style="position:absolute;height:100%;background-color:#eeeff1;transition:background-color .3s;loaded:[object Object];border-style:solid;border-color:rgba(0,0,0,.15);border-left-width:0;border-right-width:1px;border-top-width:0;border-bottom-width:0;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];width:100%;left:0;top:0;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$=10"><img src="/assets/projects/todo/project-image.jpg" style="display:block;opacity:0;transition:opacity .3s;loaded:[object Object];object-fit:cover;object-position:center;position:absolute;left:0;top:0;max-width:none;width:100%;height:100%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$=10.$/=10"/><div style="position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$=10.$=11"><span class="loader" style="width:30px;height:30px;border:4px solid rgba(255,255,255,0.6);display:inline-block;animation:Animation1 2s infinite ease;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$=10.$=11.0"><span class="loader-inner" style="vertical-align:top;display:inline-block;width:100%;background-color:rgba(255,255,255,0.6);animation:Animation2 2s infinite ease-in;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$=10.$=11.0.0"></span></span></div></div><a href="https://github.com/slightlytyler/react-native-redux-todo" target="_blank" style="display:flex;position:absolute;left:0;right:0;top:0;bottom:0;text-decoration:none;flex-direction:column;align-items:flex-end;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$/=11"><div class="container" style="position:relative;display:block;flex:1;margin-top:4.5em;opacity:0;transition:opacity 1s;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];show:[object Object];width:40%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$/=11.0"><img class="project-logo" src="/assets/projects/todo/project-logo.svg" style="position:absolute;left:50%;top:0;transform:translateX(-50%);width:80%;margin-top:-0.45em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$/=11.0.$/=10"/><span class="link" style="font-weight:300;white-space:nowrap;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];arrow:[object Object];position:absolute;left:50%;top:45%;transform:translate(-50%, -50%);color:white;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$/=11.0.$/=11"><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$/=11.0.$/=11.$=10">View the Repo</span><span style="margin-left:.25em;font-size:200%;line-height:0;vertical-align:-.125em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02todo.$/=11.0.$/=11.$/=11">›</span></span></div></a></li><li style="position:relative;width:25%;cursor:pointer;overflow:hidden;@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source"><div style="position:absolute;height:100%;background-color:#eeeff1;transition:background-color .3s;loaded:[object Object];border-style:solid;border-color:rgba(0,0,0,.15);border-left-width:0;border-right-width:1px;border-top-width:0;border-bottom-width:0;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];width:100%;left:0;top:0;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$=10"><img src="/assets/projects/open-source/project-image.jpg" style="display:block;opacity:0;transition:opacity .3s;loaded:[object Object];object-fit:cover;object-position:center;position:absolute;left:0;top:0;max-width:none;width:100%;height:100%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$=10.$/=10"/><div style="position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$=10.$=11"><span class="loader" style="width:30px;height:30px;border:4px solid rgba(255,255,255,0.6);display:inline-block;animation:Animation1 2s infinite ease;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$=10.$=11.0"><span class="loader-inner" style="vertical-align:top;display:inline-block;width:100%;background-color:rgba(255,255,255,0.6);animation:Animation2 2s infinite ease-in;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$=10.$=11.0.0"></span></span></div></div><a href="https://github.com/slightlytyler/react-svgcon" target="_blank" style="display:flex;position:absolute;left:0;right:0;top:0;bottom:0;text-decoration:none;flex-direction:row;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$/=11"><div class="container" style="position:relative;display:flex;flex:1;margin-top:4.5em;opacity:0;transition:opacity 1s;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];show:[object Object];align-items:flex-start;justify-content:space-between;height:5em;margin-left:8%;margin-right:8%;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$/=11.0"><img class="project-logo" src="/assets/projects/open-source/project-logo.svg" style="width:32%;margin-top:-0.26em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$/=11.0.$/=10"/><span class="link" style="font-weight:300;white-space:nowrap;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];arrow:[object Object];color:white;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$/=11.0.$/=11"><span data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$/=11.0.$/=11.$=10">Checkout a project</span><span style="margin-left:.25em;font-size:200%;line-height:0;vertical-align:-.125em;" data-reactid=".1dhi19q1urk.$/=11.$/=10.$featuredProjectsList/=1$featuredProjectsList.$=1$featuredProject=02open-source.$/=11.0.$/=11.$/=11">›</span></span></div></a></li></ul></div><section style="display:flex;flex-direction:column;height:100vh;background-image:linear-gradient(-180deg, #3D8A99 0%, #5AE6C5 100%);@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (min-width: 501px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11"><div style="position:relative;flex:1;@media (max-width: 1024px):[object Object];@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=10"><header style="position:absolute;left:50%;top:40%;transform:translate(-50%, -50%);color:white;font-size:4em;font-weight:100;white-space:nowrap;@media (max-width: 1024px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=10.0">What I&#x27;m working on</header></div><div style="display:flex;flex:1;flex-wrap:wrap;justify-content:center;margin:0 12.5%;@media (max-width: 1024px):[object Object];@media (max-width: 1024px) and (orientation: portrait):[object Object];@media (max-width: 500px):[object Object];padding-left:0;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11"><section style="width:25%;@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web"><ul style="list-style:none;margin:0;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0"><header style="margin-bottom:1em;font-size:2em;font-weight:400;color:#4A918A;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$/=10"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$/=10.0">Web</span></header><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-dataviz=1work/=11=2$wiwoProject=02Web-dataviz=01work"><a href="http://bernies-tax.dataviz.work/" target="_blank" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-dataviz=1work/=11=2$wiwoProject=02Web-dataviz=01work.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-dataviz=1work/=11=2$wiwoProject=02Web-dataviz=01work.0.$/=10">dataviz.work</span></a></li><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Frontnami/=11=2$wiwoProject=02Web-Frontnami"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Frontnami/=11=2$wiwoProject=02Web-Frontnami.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Frontnami/=11=2$wiwoProject=02Web-Frontnami.0.$/=10">Frontnami</span><span style="padding:.25em .5em .15em;margin-left:1em;vertical-align:.4em;font-size:.5em;font-weight:400;text-transform:uppercase;white-space:nowrap;border-width:calc(.0625em + 1px);border-style:solid;border-color:rgba(255, 255, 255, 0.8);border-radius:.6em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Frontnami/=11=2$wiwoProject=02Web-Frontnami.0.$/=11">Coming Soon</span></span></li><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Mocksy/=11=2$wiwoProject=02Web-Mocksy"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Mocksy/=11=2$wiwoProject=02Web-Mocksy.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Mocksy/=11=2$wiwoProject=02Web-Mocksy.0.$/=10">Mocksy</span><span style="padding:.25em .5em .15em;margin-left:1em;vertical-align:.4em;font-size:.5em;font-weight:400;text-transform:uppercase;white-space:nowrap;border-width:calc(.0625em + 1px);border-style:solid;border-color:rgba(255, 255, 255, 0.8);border-radius:.6em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Web/=1$wiwoCategory=02Web.0.$wiwoProject=2Web-Mocksy/=11=2$wiwoProject=02Web-Mocksy.0.$/=11">Coming Soon</span></span></li></ul></section><section style="width:25%;@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile"><ul style="list-style:none;margin:0;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0"><header style="margin-bottom:1em;font-size:2em;font-weight:400;color:#4A918A;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0.$/=10"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0.$/=10.0">Mobile</span></header><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0.$wiwoProject=2Mobile-Fams/=11=2$wiwoProject=02Mobile-Fams"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0.$wiwoProject=2Mobile-Fams/=11=2$wiwoProject=02Mobile-Fams.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0.$wiwoProject=2Mobile-Fams/=11=2$wiwoProject=02Mobile-Fams.0.$/=10">Fams</span><span style="padding:.25em .5em .15em;margin-left:1em;vertical-align:.4em;font-size:.5em;font-weight:400;text-transform:uppercase;white-space:nowrap;border-width:calc(.0625em + 1px);border-style:solid;border-color:rgba(255, 255, 255, 0.8);border-radius:.6em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Mobile/=1$wiwoCategory=02Mobile.0.$wiwoProject=2Mobile-Fams/=11=2$wiwoProject=02Mobile-Fams.0.$/=11">Coming Soon</span></span></li></ul></section><section style="width:25%;@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop"><ul style="list-style:none;margin:0;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop.0"><header style="margin-bottom:1em;font-size:2em;font-weight:400;color:#4A918A;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop.0.$/=10"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop.0.$/=10.0">Desktop</span></header><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop.0.$wiwoProject=2Desktop-Mocksy/=11=2$wiwoProject=02Desktop-Mocksy"><a href="http://slightlytyler.github.io/mocksy/" target="_blank" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop.0.$wiwoProject=2Desktop-Mocksy/=11=2$wiwoProject=02Desktop-Mocksy.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Desktop/=1$wiwoCategory=02Desktop.0.$wiwoProject=2Desktop-Mocksy/=11=2$wiwoProject=02Desktop-Mocksy.0.$/=10">Mocksy</span></a></li></ul></section><section style="width:25%;@media (max-width: 500px):[object Object];" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools"><ul style="list-style:none;margin:0;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0"><header style="margin-bottom:1em;font-size:2em;font-weight:400;color:#4A918A;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$/=10"><span data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$/=10.0">Tools</span></header><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$wiwoProject=2Tools-React Portland UI/=11=2$wiwoProject=02Tools-React Portland UI"><a href="https://github.com/slightlytyler/react-portland-ui" target="_blank" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$wiwoProject=2Tools-React Portland UI/=11=2$wiwoProject=02Tools-React Portland UI.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$wiwoProject=2Tools-React Portland UI/=11=2$wiwoProject=02Tools-React Portland UI.0.$/=10">React Portland UI</span></a></li><li style="position:relative;margin-bottom:1em;color:rgba(255, 255, 255, 0.8);cursor:default;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$wiwoProject=2Tools-Arrowsmith Web Starter/=11=2$wiwoProject=02Tools-Arrowsmith Web Starter"><a href="https://github.com/slightlytyler/arrowsmith-web-starter" target="_blank" style="color:rgba(255, 255, 255, 0.8);text-decoration:none;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$wiwoProject=2Tools-Arrowsmith Web Starter/=11=2$wiwoProject=02Tools-Arrowsmith Web Starter.0"><span style="font-family:GC, serif;font-style:italic;font-size:1.2em;" data-reactid=".1dhi19q1urk.$/=11.$=11.$/=11.$wiwoCategory=2Tools/=1$wiwoCategory=02Tools.0.$wiwoProject=2Tools-Arrowsmith Web Starter/=11=2$wiwoProject=02Tools-Arrowsmith Web Starter.0.$/=10">Arrowsmith Web Starter</span></a></li></ul></section></div></section></div></div></div><script src="/bundle.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tyler Martinez — Résumé</title>
+<meta name="description" content="Résumé of Tyler Martinez, Frontend Infrastructure Engineer.">
+<link rel="icon" href="data:,">
+<style>
+  :root{
+    color-scheme: light;
+    --bg: #f4f5f7;
+    --panel: #ffffff;
+    --text: #1c1c1c;
+    --muted: #666;
+    --accent: #0b5fff;
+    --border: #e1e3e8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    flex-wrap:wrap;
+    padding:0.9rem 1.25rem;
+    background:var(--panel);
+    border-bottom:1px solid var(--border);
+  }
+  header h1{
+    font-size:1.05rem;
+    margin:0;
+    font-weight:600;
+  }
+  header p{
+    margin:0.15rem 0 0;
+    font-size:0.85rem;
+    color:var(--muted);
+  }
+  .actions{
+    display:flex;
+    gap:0.5rem;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.4rem;
+    padding:0.5rem 0.9rem;
+    border-radius:6px;
+    font-size:0.85rem;
+    font-weight:600;
+    text-decoration:none;
+    border:1px solid var(--border);
+    color:var(--text);
+    background:var(--panel);
+  }
+  .btn.primary{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:#fff;
+  }
+  main{
+    flex:1;
+    display:flex;
+    padding:1.25rem;
+    padding-top: calc(1.25rem + env(safe-area-inset-top, 0px));
+  }
+  .viewer{
+    flex:1;
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .viewer object{
+    width:100%;
+    height:100%;
+    display:block;
+    border:0;
+  }
+  noscript{display:block;}
+  .fallback{
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:1rem;
+    padding:2rem;
+    width:100%;
+  }
+  .fallback img{
+    max-width:100%;
+    border:1px solid var(--border);
+    border-radius:8px;
+  }
+  @media (max-width: 640px){
+    .viewer{display:none;}
+    .fallback{display:flex;}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Tyler Martinez</h1>
+      <p>Frontend Infrastructure Engineer — San Diego, CA</p>
+    </div>
+    <div class="actions">
+      <a class="btn" href="mailto:slightlytyler@gmail.com">Email</a>
+      <a class="btn primary" href="Tyler_Martinez_CV.pdf" download>Download PDF</a>
+    </div>
+  </header>
+  <main>
+    <div class="viewer">
+      <object data="Tyler_Martinez_CV.pdf" type="application/pdf">
+        <p style="padding:1rem;">PDF preview isn't available in this browser. <a href="Tyler_Martinez_CV.pdf">Download the résumé PDF</a> instead.</p>
+      </object>
+    </div>
+    <div class="fallback">
+      <img src="Tyler_Martinez_CV_1.png" alt="Tyler Martinez résumé preview">
+      <a class="btn primary" href="Tyler_Martinez_CV.pdf" download>Download PDF</a>
+    </div>
+  </main>
+</body>
+</html>
